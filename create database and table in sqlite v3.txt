@@ -1,0 +1,24 @@
+.open user_db.db
+CREATE TABLE IF NOT EXISTS users (
+    	id INTEGER PRIMARY KEY,
+    	username TEXT NOT NULL,
+    	email TEXT NOT NULL
+);
+
+INSERT INTO users (username, email) VALUES
+	('sometri_OENG', 'sometri@example.com'),
+    	('jane_doe', 'jane@example.com'),
+    	('alice', 'alice@example.com'),
+    	('bob', 'bob@example.com');
+
+sqlite> SELECT * FROM users;
+
+sqlite> .databases
+sqlite> .open user_db.db
+sqlite> .tables
+sqlite> .schema users
+sqlite> PRAGMA table_info(users);
+======
+
+fist type sqlite3
+because our sqlite is named sqlite3
